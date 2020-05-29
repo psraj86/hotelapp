@@ -24,6 +24,12 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
 
 import { AccomodationComponent } from './accomodation/accomodation.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -46,12 +52,17 @@ import { AppRoutingModule } from './app-routing.module';
     AuthComponent,
     SignInComponent,
     SignUpComponent,
+    HomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NavtabsComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
